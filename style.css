@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header{
+    width: 100%;
+}
+
+.header_logo{
+    display: flex;
+}
+
+.header_menu_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_menu{
+}
