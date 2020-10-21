@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    padding: 0 50px;
+    width:100%;
     height: 1080px;
 }
 
@@ -25,7 +25,6 @@ header {
     justify-content: space-between;
 }
 
-.header_menu {}
 
 
 .about {
@@ -63,10 +62,10 @@ header {
 }
 
 .first_view_top {
+    width: 1920px;
     z-index: 1;
     position: absolute;
     top: 0;
-    right: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -92,14 +91,9 @@ img {
     width: 30%;
 }
 
-.first_view_bottom {
-    display: flex;
-    position: relative;
-}
-
 .header_catch {
     position: absolute;
-    top: 500px;
+    top: 730px;
     left: 700px;
     z-index: 500;
 }
