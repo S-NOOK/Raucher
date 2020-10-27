@@ -130,3 +130,42 @@ p {
   width: 500px;
   margin-right: 100px;
 }
+
+/* service */
+.service-ttl {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.service-item {
+  text-align: center;
+  height: 500px;
+  width: 30%;
+  background-color: #eee;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 10px;
+}
+
+.service-item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 14px;
+}
