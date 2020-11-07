@@ -75,20 +75,14 @@ p {
 }
 
 .about {
-  height: 1080px;
-}
-
-.about-space {
-  background-color: #000;
-  width: 700px;
-}
-
-.about-color {
-  color: black;
-  width: 700px;
-  height: 500px;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2000;
+  left: 0;
+  width: 71%;
+  height: 82%;
+  background-color: gray;
 }
 
 .about-link {
