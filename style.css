@@ -82,7 +82,7 @@ p {
   left: 0;
   width: 71%;
   height: 82%;
-  background-color: gray;
+  background-color: #888888;
 }
 
 .about-link {
@@ -115,75 +115,75 @@ p {
 
 h3,
 p {
-    color: red;
+  color: red;
 }
 
-.achievement{
-    margin-top:30px;
+.achievement {
+  margin-top: 30px;
 }
 
-.achievement-ttl{
-    font-size: 25px;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    width:500px;
-    margin:0 auto;
-    margin-bottom:20px;
+.achievement-ttl {
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-.contact{
-    margin-top:30px;
+.contact {
+  margin-top: 30px;
 }
 
-.contact-text{
-    width:500px;
-    margin:0 auto;
-    margin-bottom:30px;
+.contact-text {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.contact-ttl{
-    font-size: 25px;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    width:500px;
-    margin:0 auto;
-    margin-bottom:20px;
+.contact-ttl {
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-.contact-line{
-    display:inline-block;
-    width: 1px;
-    height: 150px;
-    background-color:black;
-    margin-bottom:30px;
-  }
-
-.contact-form{
-    width:650px;
-    height:250px;
-    margin:0 auto;
-    background-color: grey;
+.contact-line {
+  display: inline-block;
+  width: 1px;
+  height: 150px;
+  background-color: black;
+  margin-bottom: 30px;
 }
 
-.contact-btn{
-        display: inline-block;
-        width: 360px;
-        height:80px;
-        text-align: left;
-        border: 2px solid #9ec34b;
-        font-size: 16px;
-        color: #9ec34b;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 8px 16px;
-        border-radius: 4px;
-        transition: .4s;
-      }
-      
+.contact-form {
+  width: 650px;
+  height: 250px;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+.contact-btn {
+  display: inline-block;
+  width: 360px;
+  height: 80px;
+  text-align: left;
+  border: 2px solid #9ec34b;
+  font-size: 16px;
+  color: #9ec34b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
 .contact-btn:hover {
-        background-color: #9ec34b;
-        border-color: #cbe585;
-        color: #FFF;
+  background-color: #9ec34b;
+  border-color: #cbe585;
+  color: #fff;
 }
 
 .carousel-wrap {
