@@ -184,9 +184,6 @@ p {
   overflow: hidden;
 }
 
-/* ------------------------------
-   CLEARFIX ELEMENTS
------------------------------- */
 .loopSliderWrap:after {
   content: "";
   display: none;
