@@ -119,6 +119,80 @@ p {
   padding-top: 140px;
 }
 
+.about-sec::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 80%;
+  background-color: #eff0f2;
+}
+
+.about-pic {
+  float: left;
+  list-style: none;
+  position: relative;
+  margin-right: 50px;
+  width: 278.333px;
+}
+
+.about-sub-ttl {
+  position: relative;
+  margin-left: -50px;
+  opacity: 1;
+}
+
+.about-text {
+  position: relative;
+  width: 45%;
+  margin: 0 5% 0 45%;
+  padding: 50px 120px 0 150px;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.loopSliderWrap {
+  top: 0;
+  left: 0;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.loopSlider {
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.loopSlider ul {
+  height: 300px;
+  float: left;
+  overflow: hidden;
+}
+
+.loopSlider ul li {
+  width: 100px;
+  height: 300px;
+  float: left;
+  display: inline;
+  overflow: hidden;
+}
+
+/* ------------------------------
+   CLEARFIX ELEMENTS
+------------------------------ */
+.loopSliderWrap:after {
+  content: "";
+  display: none;
+  clear: none;
+}
+
 h3,
 p {
   color: red;
