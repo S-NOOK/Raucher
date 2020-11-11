@@ -6,21 +6,34 @@
 
 body {
   width: 1920px;
+  background-image:url(./image/nunoji.jpeg);
 }
 
 header {
-  width: 100%;
+  width: 90%;
+  /* display: flex;
+  justify-content: center; */
   height: 1080px;
 }
 
 .header_logo {
   display: flex;
   justify-content: space-between;
+  font-size: 60px;
+  margin-left:110px;
+}
+
+.header_logo > h2{
+  margin-right: 260px;
+  z-index: 100;
 }
 
 .header_menu_list {
   z-index: 10;
   width: 80%;
+  margin-top:55px;
+  padding:0 10px 0 10px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -217,6 +230,7 @@ p {
 .achievement-content{
   display:flex;
   justify-content: center;
+  margin-left: 110px;
 }
 
 /* .achievement-merge{
