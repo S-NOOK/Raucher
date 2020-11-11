@@ -126,19 +126,45 @@ p {
 
 .achievement {
   margin-top: 30px;
+  text-align: center;
+  position: relative;
+  top:800px;
 }
 
 .achievement-ttl {
   font-size: 25px;
   letter-spacing: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 500px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
+.achievement-content{
+  display:flex;
+  justify-content: center;
+}
+
+/* .achievement-merge{
+  border:1px solid gray;
+  width: 400px;
+  margin-right:30px;
+  margin-left:30px;
+} */
+
+.achievement-img{
+  height:200px;
+}
+
+.achievement-text{
+  height:80px;
+}
+
 .contact {
   margin-top: 30px;
+  text-align: center;
+  position: relative;
+  top:1000px;
 }
 
 .contact-text {
@@ -168,16 +194,21 @@ p {
   width: 650px;
   height: 250px;
   margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   background-color: grey;
 }
 
 .contact-btn {
   display: inline-block;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   width: 360px;
   height: 80px;
-  text-align: left;
   border: 2px solid #9ec34b;
-  font-size: 16px;
+  font-size: 24px;
   color: #9ec34b;
   text-decoration: none;
   font-weight: bold;
