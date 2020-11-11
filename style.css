@@ -68,11 +68,11 @@ p {
 }
 
 /* about */
-.flex {
+/* .flex {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
+} */
 
 .about {
   content: "";
@@ -85,7 +85,7 @@ p {
   background-color: #888888;
 }
 
-.about-link {
+/* .about-link {
   width: 80px;
   position: relative;
 }
@@ -111,6 +111,12 @@ p {
   padding: 10px 30px;
   border: 1px solid #000;
   position: relative;
+} */
+
+.about-sec {
+  position: relative;
+  margin-bottom: 200px;
+  padding-top: 140px;
 }
 
 h3,
