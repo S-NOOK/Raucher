@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -66,52 +67,6 @@ h3,
 p {
   color: red;
 }
-
-/* about */
-/* .flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-} */
-
-.about {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 2000;
-  left: 0;
-  width: 71%;
-  height: 82%;
-  background-color: #888888;
-}
-
-/* .about-link {
-  width: 80px;
-  position: relative;
-}
-
-.about-body {
-  width: 30%;
-  background: #fff;
-  padding: 30px;
-  border: 1px solid #000;
-}
-
-.about-ttl {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.about-text {
-  margin-bottom: 30px;
-}
-
-.about-btn {
-  display: inline-block;
-  padding: 10px 30px;
-  border: 1px solid #000;
-  position: relative;
-} */
 
 .about-sec {
   position: relative;
@@ -184,13 +139,52 @@ p {
   overflow: hidden;
 }
 
-/* ------------------------------
-   CLEARFIX ELEMENTS
------------------------------- */
 .loopSliderWrap:after {
   content: "";
   display: none;
   clear: none;
+}
+
+div {
+  display: block;
+}
+
+.service-ttl {
+  font-size: 60px;
+  display: block;
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.service-ttl::after {
+  content: "";
+  position: absolute;
+  top: 2200px;
+  left: 50%;
+  width: 1px;
+  height: 80px;
+  background-color: #111;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.service-sec-con {
+  margin-top: -20px;
+  padding: 140px 0 140px;
+  background: url(./image/jhpost_toppage.jpg) center center no-repeat;
+  background-size: 1600px;
+}
+
+.service-sec-con li {
+  position: relative;
+  width: 20%;
+  margin: 0 5px 0 5px;
+  padding: 75px 50px 70px;
+  background-color: rgba(255, 255, 255, 0.92);
+  transition: all 0.8s;
 }
 
 h3,
@@ -202,7 +196,7 @@ p {
   margin-top: 30px;
   text-align: center;
   position: relative;
-  top:800px;
+  top: 800px;
 }
 
 .achievement-ttl {
@@ -214,8 +208,8 @@ p {
   margin-bottom: 20px;
 }
 
-.achievement-content{
-  display:flex;
+.achievement-content {
+  display: flex;
   justify-content: center;
 }
 
@@ -226,19 +220,19 @@ p {
   margin-left:30px;
 } */
 
-.achievement-img{
-  height:200px;
+.achievement-img {
+  height: 200px;
 }
 
-.achievement-text{
-  height:80px;
+.achievement-text {
+  height: 80px;
 }
 
 .contact {
   margin-top: 30px;
   text-align: center;
   position: relative;
-  top:1000px;
+  top: 1000px;
 }
 
 .contact-text {
@@ -268,7 +262,7 @@ p {
   width: 650px;
   height: 250px;
   margin: 0 auto;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: grey;
@@ -276,7 +270,7 @@ p {
 
 .contact-btn {
   display: inline-block;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 360px;
