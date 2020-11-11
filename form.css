@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-image: url(./image/nunoji.jpeg);
+
+=======
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-image: url(./image/nunoji.jpeg);
+
+>>>>>>> 4de17d41e740f9655c775be71d8e3bc5665810fc
+}
