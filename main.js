@@ -1,50 +1,47 @@
 "use strict";
 
-const carouselWidth = $("#carousel li").width();
-const length = $(".carousel-item").length;
-const innerWidth = carouselWidth * length;
-const time = 400;
+$(function () {
+    var setElm = $('.loopSlider'),
+        slideSpeed = 2000;
 
-const carouselinner = $("#carousel");
-const prev = $("#prev");
-const next = $("#next");
+    setElm.each(function () {
+        var self = $(this),
+            selfWidth = self.innerWidth(),
+            findUl = self.find('ul'),
+            findLi = findUl.find('li'),
+            listWidth = findLi.outerWidth(),
+            listCount = findLi.length,
+            loopWidth = listWidth * listCount;
 
-let c = 1;
+        findUl.wrapAll('<div class="loopSliderWrap" />');
+        var selfWrap = self.find('.loopSliderWrap');
 
-next.click(function () {
-    if (c == length) {
-        carouselinner.stop().animate({
-                left: 0,
+        if (loopWidth > selfWidth) {
+            findUl.css({
+                width: loopWidth
+            }).clone().appendTo(selfWrap);
 
-            },
-            time
-        );
-        c = 1;
-    } else {
-        carouselinner.stop().animate({
-                left: -c * carouselWidth,
-            },
-            time
-        );
-        c++;
-    }
-});
+            selfWrap.css({
+                width: loopWidth * 2
+            });
 
-prev.click(function () {
-    if (c == 1) {
-        carouselinner.stop().animate({
-                left: carouselWidth - innerWidth,
-            },
-            time
-        );
-        c = length;
+            function loopMove() {
+                selfWrap.animate({
+                    left: '-' + (loopWidth) + 'px'
+                }, slideSpeed * listCount, 'linear', function () {
+                    selfWrap.css({
+                        left: '0'
+                    });
+                    loopMove();
+                });
+            };
+            loopMove();
 
-    } else {
-        carouselinner.stop().animate({
-                left: -(c - 2) * carouselWidth,
-            },
-            time
-        );
-        c--;
-    }
+            setElm.hover(function () {
+                selfWrap.pause();
+            }, function () {
+                selfWrap.resume();
+            });
+        }
+    });
 });
