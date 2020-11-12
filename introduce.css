@@ -59,7 +59,7 @@ img {
 .header_about {
   position: absolute;
   top: 800px;
-  left:0;
+  left: 0;
   z-index: 500;
   background-color: white;
   width: 790px;
@@ -67,12 +67,12 @@ img {
   margin-left: 180px;
 }
 
-.header_about > h2{
+.header_about>h2 {
   text-align: right;
   font-size: 72px;
 }
 
-.header_about > p{
+.header_about>p {
   margin-top: 50px;
   text-align: center;
 }
@@ -97,27 +97,31 @@ img {
   background-color: #888888;
 }
 
-.profile{
+.profile {
   margin: 160px 180px 0 180px;
 }
 
-.profile_header > h1{
+.profile_header>h1 {
   margin-bottom: 160px;
 }
 
-.p_detail{
+.p_detail {
   display: flex;
   text-align: center;
 }
 
-.p_img{
-  width: 780px;
+.p_img {
+  width: 500px;
   height: 350px;
   border: 1px solid black;
 }
 
-.p_name{
-  width: 780px;
+.hiroto {
+  transform: scale(-1, 1);
+}
+
+.p_name {
+  width: 1060px;
   height: 350px;
   border: 1px solid black;
   display: flex;
@@ -125,28 +129,28 @@ img {
   align-items: center;
 }
 
-.profile_header > h1{
+.profile_header>h1 {
   text-align: center;
   font-size: 72px;
 }
 
-.p_name > p{
+.p_name>p {
   text-align: center;
   display: block;
   font-size: 20px;
 }
 
-span{
+span {
   font-weight: bold;
   font-size: 50px;
 }
 
-.p_text{
+.p_text {
   margin-top: 50px;
   margin-bottom: 50px
 }
 
-.p_message{
+.p_message {
   font-weight: bold;
   font-size: 30px;
 }
