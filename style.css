@@ -83,7 +83,7 @@ p {
 
 .about-sec {
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 450px;
   padding-top: 140px;
 }
 
@@ -95,7 +95,7 @@ p {
   left: 0;
   width: 70%;
   height: 80%;
-  background-color: #eff0f2;
+  /* background-color: #ee82ee; */
 }
 
 .about-pic {
@@ -103,22 +103,39 @@ p {
   list-style: none;
   position: relative;
   margin-right: 50px;
-  width: 278.333px;
+  /* width: 278.333px; */
 }
 
 .about-sub-ttl {
-  position: relative;
-  margin-left: -50px;
+  position: absolute;
+  right: 0;
+  top: 350px;
+  background-color: #fff;
+  width: 800px;
+  height: 500px;
   opacity: 1;
+}
+
+.eng {
+  font-size: 60px;
+  display: block;
+  padding: 50px 0 50px 70px;
+}
+
+.about-btn {
+  border: 1px solid #111;
+  padding: 10px 10px 10px 10px;
+  display: inline-flex;
+
+  font-size: 30px;
+  top: 400px;
 }
 
 .about-text {
   position: relative;
-  width: 45%;
-  margin: 0 5% 0 45%;
-  padding: 50px 120px 0 150px;
-  background-color: #fff;
+  font-size: 20px;
   z-index: 100;
+  padding: 50px 70px 50px 70px;
 }
 
 .loopSliderWrap {
@@ -187,7 +204,7 @@ div {
 .service-sec-con {
   margin-top: -20px;
   padding: 140px 0 140px;
-  background: url(./image/jhpost_toppage.jpg) center center no-repeat;
+  background: url(./image/jhpost_toppage.jpeg) center center no-repeat;
   background-size: 1600px;
 }
 
