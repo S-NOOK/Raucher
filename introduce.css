@@ -58,7 +58,7 @@ img {
 
 .header_about {
   position: absolute;
-  top: 650px;
+  top: 800px;
   left:0;
   z-index: 500;
   background-color: white;
@@ -77,10 +77,7 @@ img {
   text-align: center;
 }
 
-h3,
-p {
-  color: red;
-}
+
 
 /* about */
 /* .flex {
@@ -135,4 +132,21 @@ p {
 
 .p_name > p{
   text-align: center;
+  display: block;
+  font-size: 20px;
+}
+
+span{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.p_text{
+  margin-top: 50px;
+  margin-bottom: 50px
+}
+
+.p_message{
+  font-weight: bold;
+  font-size: 30px;
 }
