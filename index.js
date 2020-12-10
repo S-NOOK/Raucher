@@ -1,5 +1,3 @@
-"use strict";
-
 const carouselWidth = $("#carousel li").width(); 
 const length = $(".carousel-item").length; 
 const innerWidth = carouselWidth * length; 
@@ -10,6 +8,8 @@ const prev = $("#prev");
 const next = $("#next");
 
 let c = 1;
+
+'use strict';
 
 next.click(function () {
     if (c == length) {
