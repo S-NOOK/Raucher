@@ -2,11 +2,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
 }
 
 body {
   width: 1920px;
-  background-image: url(./image/nunoji.jpeg);
+  background-color: #FFEBCD
+  /* background-image: url(./image/nunoji.jpeg); */
 }
 
 header {
@@ -14,25 +20,37 @@ header {
   height: 1080px;
 }
 
+.header_menu{
+  font-size: 25px;
+  margin-bottom: 60px;
+  font-weight:bold;
+  transition: 0.4s;
+}
+
+
 .header_logo {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  font-size: 40px;
+  margin-left: 180px;
+  margin-bottom: 120px;
 }
 
 .header_menu_list {
-  z-index: 10;
+  margin-left: 250px;
+  /* z-index: 10;
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .first_view_top {
   width: 1920px;
-  z-index: 1;
   position: absolute;
   top: 0;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .space_top {
@@ -40,7 +58,9 @@ header {
 }
 
 .image_top {
-  width: 70%;
+  width: 1336px;
+  height: 738px;
+  z-index: 2;
 }
 
 img {
@@ -57,24 +77,65 @@ img {
 }
 
 .header_about {
+  border: 5px solid  rgba(94,65,138,0.5);
+  animation: uneune 5s linear infinite;
+  /* background-image: url(./image/nunoji.jpeg); */
   position: absolute;
-  top: 800px;
+  border-radius: 9999px;
+  top: 400px;
   left: 0;
-  z-index: 500;
-  background-color: white;
+  z-index: 1;
   width: 790px;
-  height: 400px;
+  height: 790px;
   margin-left: 180px;
-}
+  background:rgba(94,65,138,0.5);}
+
+  @keyframes uneune {
+    0%{
+      border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%
+    }
+    /* 12.5%{
+      border-radius: 500% 40% 70% 80% / 50% 700% 50% 70%
+    } */
+    25%{
+      border-radius: 70% 60% 70% 90% / 70% 80% 40% 90%
+    }
+    /* 37.5%{
+      border-radius: 60% 50% 60% 80% / 70% 60% 40% 70%
+    } */
+    50%{
+      border-radius: 60% 40% 70% 60% / 40% 60% 50% 60%
+    }
+    /* 62.5%{
+      border-radius: 50% 40% 70% 80% / 60% 70% 50% 70%
+    } */
+    75%{
+      border-radius: 90% 60% 40% 70% / 70% 50% 80% 40%
+    }
+    /* 87.5%{
+      border-radius: 50% 60% 70% 50% / 40% 60% 50% 70%
+    } */
+    100%{
+      border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%
+    }
+  }
 
 .header_about>h2 {
+  position:absolute;
+  top: 340px;
+  left: 280px;
   text-align: right;
-  font-size: 72px;
+  font-size: 60px;
 }
 
 .header_about>p {
   margin-top: 50px;
+  font-size: 20px;
   text-align: center;
+  position:absolute;
+  top: 400px;
+  left: 150px;
+  text-align: right;
 }
 
 
@@ -97,6 +158,16 @@ img {
   background-color: #888888;
 }
 
+.line{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 780px;
+  height: 3000px;
+  border-right: 30px solid black;
+  border-radius: 10px;
+}
+
 .profile {
   margin: 160px 180px 0 180px;
 }
@@ -110,11 +181,76 @@ img {
   text-align: center;
 }
 
-.p_img {
-  width: 500px;
-  height: 350px;
-  border: 1px solid black;
+.brother{
+  padding-top: 150px;
 }
+
+.brother{
+  position: relative;
+  text-align: center;
+}
+
+.triangle-1{
+  position: absolute;
+  top: 700px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  border-right: 200px solid transparent;
+  border-bottom: 346.4101615145px solid #b2ce54;
+  border-left: 200px solid transparent;
+}
+
+.triangle-2{
+
+  position: absolute;
+  top: 1500px;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  border-right: 200px solid transparent;
+  border-bottom: 346.410161514px solid #b2ce54;
+  border-left: 200px solid transparent;
+}
+
+.triangle-1, .triangle-2 {
+  animation: r1 3s linear infinite;
+
+}
+ 
+@keyframes r1 {
+  0%   { transform: rotate(0,0,0,0deg); }
+  100% { transform:rotate3d(1,1,1,360deg); }
+}
+
+.triangle-parent{
+  height: 500px;
+}
+
+.p_img {
+  z-index: 2;
+  margin: 0 auto;
+  height: 800px;
+  width: 800px;
+}
+
+.p_img > img{
+  border-radius: 999px;
+  height: 800px;
+  width: 800px;
+  animation: uneune 5s linear infinite;
+
+}
+
+.flip-1{
+  position: absolute;
+  top: 700px;
+  left: 0px;
+  animation: flip 5s linear infinite;
+  transform-style: preserve-3d;
+}
+
+
 
 .hiroto {
   transform: scale(-1, 1);
