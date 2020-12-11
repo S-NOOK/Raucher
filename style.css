@@ -300,8 +300,6 @@ p {
 } */
 
 .achievement {
-<<<<<<< HEAD
-=======
   margin-top: 30px;
   text-align: center;
   position: relative;
@@ -309,7 +307,6 @@ p {
 }
 
 /* .achievement {
->>>>>>> 8cfcd7e114699fb8ef09f4194a547a04a571047f
     margin-top: 30px;
     text-align: center;
     position: relative;
@@ -431,9 +428,6 @@ p {
 .carousel-item {
     height: 500px;
     width: 500px;
-<<<<<<< HEAD
-}
-=======
 }
 
 #prev.btn {
@@ -472,4 +466,3 @@ p {
     border-color: #fff;
 }
 
->>>>>>> 8cfcd7e114699fb8ef09f4194a547a04a571047f
