@@ -47,7 +47,6 @@ $(function () {
 });
 
 
-<<<<<<< HEAD
 const carouselWidth = $("#carousel li").width();
 const length = $(".carousel-item").length;
 const innerWidth = carouselWidth * length;
@@ -124,5 +123,3 @@ function drop(e) {
         this.parentNode.removeChild(this);
     }, false);
 }
-=======
->>>>>>> 8cfcd7e114699fb8ef09f4194a547a04a571047f
